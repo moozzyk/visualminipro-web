@@ -15,7 +15,7 @@ const TAGLINE = "Easiest way to use your XGecu programmer on Mac — burn EEPROM
 const SUBHEAD = "A focused, Mac‑native UI for T866+/T48/T56 that just works.";
 
 // TODO: paste your real Mac App Store URL here
-const APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXXX";
+const APP_STORE_URL = "https://apps.apple.com/app/id6747261192";
 // TODO: set your support email
 const SUPPORT_EMAIL = "support@visualminipro.app";
 

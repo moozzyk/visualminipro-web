@@ -1,22 +1,11 @@
 import React from "react";
 import { Cpu, HardDrive, Usb, ShieldCheck, MessageSquare, ExternalLink, CheckCircle2 } from "lucide-react";
 
-/**
- * Visual Minipro — Lively palette landing page
- * -------------------------------------------
- * • Brighter, more saturated accents (sky/indigo/emerald)
- * • Light base with soft color washes instead of pure gray
- * • Accessible contrasts and minimal decoration
- * • Single‑file React component using Tailwind
- */
-
 const APP_NAME = "Visual Minipro";
-const TAGLINE = "Easiest way to use your XGecu programmer on Mac — burn EEPROMs, test logic ICs, and update firmware.";
+const TAGLINE = "Easiest way to use your XGecu programmer on Mac — program EEPROMs, test logic ICs, and update firmware.";
 const SUBHEAD = "A focused, Mac‑native UI for T866+/T48/T56 that just works.";
 
-// TODO: paste your real Mac App Store URL here
 const APP_STORE_URL = "https://apps.apple.com/app/id6747261192";
-// TODO: set your support email
 const SUPPORT_EMAIL = "support@visualminipro.app";
 
 export default function App() {
@@ -73,7 +62,7 @@ export default function App() {
               <li className="rounded-full border border-sky-200 bg-sky-50 text-sky-700 px-2 py-1">T866+</li>
               <li className="rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 px-2 py-1">T48</li>
               <li className="rounded-full border border-rose-200 bg-rose-50 text-rose-700 px-2 py-1">T56</li>
-              <li className="rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 px-2 py-1">Apple silicon & Intel</li>
+              <li className="rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 px-2 py-1">Apple silicon</li>
             </ul>
           </div>
 
@@ -116,7 +105,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14 grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h3 className="text-xl font-semibold">Compatibility</h3>
-            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern macOS on Apple silicon and Intel Macs.</p>
+            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern macOS on Apple silicon Macs.</p>
             <ul className="mt-4 space-y-2 text-[15px]">
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> XGecu T866+, T48, T56</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> USB connection with status and troubleshooting tips</li>
@@ -153,7 +142,7 @@ export default function App() {
           <div className="mt-6 divide-y divide-indigo-100 border border-indigo-100 rounded-md bg-white">
             {[
               { q: "Which programmers are supported?", a: "XGecu T866+, T48, and T56." },
-              { q: "What macOS versions are supported?", a: "Recent macOS on Apple silicon and Intel Macs." },
+              { q: "What Mac OS versions are supported?", a: "Recent Mac OS versions on Apple silicon Macs." },
               { q: "Can it test logic chips?", a: "Yes — common TTL/CMOS families with clear pass/fail." },
               { q: "Is firmware updating supported?", a: "Yes, from within the app." },
               { q: "Where can I get help?", a: `Email ${SUPPORT_EMAIL}.` },

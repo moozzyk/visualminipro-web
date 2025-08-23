@@ -92,8 +92,8 @@ export default function App() {
           <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Feature color="sky" icon={HardDrive} title="EEPROM programming" desc="Read, verify, and write EEPROMs with a clear, guided flow." />
             <Feature color="indigo" icon={Cpu} title="Logic IC tests" desc="Run tests for common TTL/CMOS chips with clear pass/fail feedback." />
-            <Feature color="emerald" icon={Usb} title="XGecu support" desc="Works with T866+, T48, and T56 via USB on macOS." />
-            <Feature color="violet" icon={ShieldCheck} title="macOS‑native" desc="Signed, sandbox‑friendly design that plays well with system permissions." />
+            <Feature color="emerald" icon={Usb} title="XGecu support" desc="Works with T866+, T48, and T56 via USB on Mac OS." />
+            <Feature color="violet" icon={ShieldCheck} title="Mac OS‑native" desc="Signed, sandbox‑friendly design that plays well with system permissions." />
             <Feature color="rose" icon={CheckCircle2} title="Transparent operations" desc="Deterministic progress, readable logs, and actionable errors." />
             <Feature color="amber" icon={MessageSquare} title="Simple by design" desc="Minimal UI that makes frequent tasks fast, not fancy." />
           </div>
@@ -105,7 +105,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14 grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h3 className="text-xl font-semibold">Compatibility</h3>
-            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern macOS on Apple silicon Macs.</p>
+            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern Mac OS on Apple silicon Macs.</p>
             <ul className="mt-4 space-y-2 text-[15px]">
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> XGecu T866+, T48, T56</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> USB connection with status and troubleshooting tips</li>
@@ -179,7 +179,7 @@ export default function App() {
             '@context': 'https://schema.org',
             '@type': 'SoftwareApplication',
             name: APP_NAME,
-            operatingSystem: 'macOS',
+            operatingSystem: 'Mac OS',
             applicationCategory: 'DeveloperApplication',
             description: TAGLINE,
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

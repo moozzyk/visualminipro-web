@@ -15,8 +15,8 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-indigo-200/70 shadow-[0_1px_0_0_rgba(99,102,241,0.15)]">
         <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 font-semibold text-[#0f172a]">
-            <div className="h-7 w-7 rounded-md border border-indigo-200 bg-gradient-to-br from-sky-200 to-indigo-200 grid place-items-center">
-              <Cpu className="h-4 w-4 text-indigo-700" />
+            <div className="h-10 w-10 from-sky-200 to-indigo-200 grid place-items-center">
+              <img src={`${import.meta.env.BASE_URL}images/icon_1024.png`} alt="Hero" />
             </div>
             <span>{APP_NAME}</span>
           </a>

@@ -42,7 +42,8 @@ export default function App() {
       <section id="home" className="border-b border-indigo-100 bg-gradient-to-br from-sky-50 via-white to-indigo-50">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-[#0b1220]">{APP_NAME}</h1>
+            <img className="align-top inline h-14 w-14" src={`${import.meta.env.BASE_URL}images/icon_1024.png`} alt="Hero" />
+            <h1 className="inline text-4xl md:text-5xl font-semibold tracking-tight text-[#0b1220]"> {APP_NAME}</h1>
             <p className="mt-4 text-lg leading-relaxed text-[#0f172a]">{TAGLINE}</p>
             <p className="mt-2 text-[15px] text-[#334155]">{SUBHEAD}</p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3">

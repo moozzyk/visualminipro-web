@@ -29,16 +29,16 @@ export default function App() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-md border border-indigo-300 bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-3 py-1.5 shadow-sm hover:opacity-95"
-              aria-label="Open Mac App Store"
+              className="inline-flex items-center gap-2"
             >
-              Mac App Store <ExternalLink className="h-4 w-4" />
+              <img 
+               src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 
+               alt="Download on the Mac Map Store" />
             </a>
           </nav>
         </div>
       </header>
 
-      {/* Hero */}
       <section id="home" className="border-b border-indigo-100 bg-gradient-to-br from-sky-50 via-white to-indigo-50">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -51,9 +51,11 @@ export default function App() {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-4 py-2 text-[15px] shadow hover:opacity-95"
+                className="inline-flex items-center justify-center gap-2"
               >
-                Open in Mac App Store <ExternalLink className="h-4 w-4" />
+                <img 
+                 src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 
+                 alt="Download on the Mac Map Store" />
               </a>
               <a href="#features" className="inline-flex items-center justify-center rounded-md px-4 py-2 text-[15px] text-indigo-700 hover:text-indigo-800">
                 See features

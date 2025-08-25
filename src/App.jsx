@@ -6,7 +6,6 @@ const TAGLINE = "Easiest way to use your XGecu programmer on Mac — program EEP
 const SUBHEAD = "A focused, Mac‑native UI for T866+/T48/T56 that just works.";
 
 const APP_STORE_URL = "https://apps.apple.com/app/id6747261192";
-const SUPPORT_EMAIL = "support@visualminipro.app";
 
 export default function App() {
   return (
@@ -148,7 +147,7 @@ export default function App() {
               { q: "What Mac OS versions are supported?", a: "Recent Mac OS versions on Apple silicon Macs." },
               { q: "Can it test logic chips?", a: "Yes — common TTL/CMOS families with clear pass/fail." },
               { q: "Is firmware updating supported?", a: "Yes, from within the app." },
-              { q: "Where can I get help?", a: `Email ${SUPPORT_EMAIL}.` },
+              { q: "Where can I get help?", a: (<>Report problems in the <a href="https://github.com/yourname/yourrepo/issues" target="_blank" rel="noreferrer noopener" className="text-indigo-700 hover:underline">Visual Minipro Github repo</a>.</>) },
             ].map(({ q, a }) => (
               <details key={q} className="group">
                 <summary className="list-none cursor-pointer px-4 py-3 flex items-center justify-between">
@@ -167,7 +166,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-8 text-[14px] text-[#334155] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p>© {new Date().getFullYear()} {APP_NAME}</p>
           <div className="flex items-center gap-4">
-            <a href={`mailto:${SUPPORT_EMAIL}`} className="hover:text-indigo-700">Support</a>
+            <a href="https://github.com/moozzyk/MiniproUI/issues" className="hover:text-indigo-700">Support</a>
             <a href="#privacy" className="hover:text-indigo-700">Privacy</a>
             <a href={APP_STORE_URL} className="text-indigo-700 hover:text-indigo-800">Mac App Store</a>
           </div>

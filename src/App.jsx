@@ -68,21 +68,10 @@ export default function App() {
             </ul>
           </div>
 
-          {/* Mock screenshot */}
-          <div className="rounded-lg border border-indigo-200 bg-white/70 p-3 shadow-sm">
-            <div className="rounded-md border border-indigo-200 bg-white p-4">
-              <div className="h-6 w-28 rounded bg-indigo-100 mb-3" />
-              <div className="grid grid-cols-3 gap-3">
-                {[...Array(6)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[4/3] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100"
-                  />
-                ))}
-              </div>
-              <div className="mt-4 h-9 rounded border border-indigo-200 bg-gradient-to-r from-sky-50 to-indigo-50" />
-            </div>
-            <p className="mt-2 text-[12px] text-[#334155] text-center">Replace with real screenshots</p>
+          <div className="rounded-lg border border-indigo-200 bg-white/70 p-2 shadow-sm">
+              <img 
+               src={`${import.meta.env.BASE_URL}images/VisualMiniProMacbookPro.png`} 
+               alt="Visual Minipro on Macbook Pro" />
           </div>
         </div>
       </section>

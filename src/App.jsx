@@ -69,9 +69,11 @@ export default function App() {
           </div>
 
           <div className="rounded-lg border border-indigo-200 bg-white/70 p-2 shadow-sm">
-              <img 
-               src={`${import.meta.env.BASE_URL}images/VisualMiniProMacbookPro.png`} 
-               alt="Visual Minipro on Macbook Pro" />
+	     <a href={`${import.meta.env.BASE_URL}images/VisualMiniProMacbookPro.png`}  target="_blank" rel="noreferrer no opener">
+               <img 
+                 src={`${import.meta.env.BASE_URL}images/VisualMiniProMacbookPro.png`} 
+                 alt="Visual Minipro on Macbook Pro" />
+             </a>
           </div>
         </div>
       </section>
@@ -118,12 +120,42 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h3 className="text-xl font-semibold">A quick look</h3>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {[1,2,3,4].map((n) => (
-              <div key={n} className="rounded-md border border-indigo-200 bg-white p-3 shadow-sm">
-                <div className="aspect-[16/10] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100" />
-                <div className="mt-3 h-2 w-32 rounded bg-indigo-100" />
+            <div key={1} className="rounded-md border border-indigo-200 bg-white p-3 shadow-sm">
+ 	      <div className="aspect-[16/10] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100">
+                <a href={`${import.meta.env.BASE_URL}images/ChipProgramming.png`} target="_blank" rel="noreferrer no opener">
+                  <img 
+                   src={`${import.meta.env.BASE_URL}images/ChipProgramming.png`} 
+                   alt="Chip and EEPROM programming" />
+                </a>
               </div>
-            ))}
+            </div>
+            <div key={2} className="rounded-md border border-indigo-200 bg-white p-3 shadow-sm">
+ 	      <div className="aspect-[16/10] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100">
+                <a href={`${import.meta.env.BASE_URL}images/LogicICTest.png`} target="_blank" rel="noreferrer no opener">
+                  <img 
+                   src={`${import.meta.env.BASE_URL}images/LogicICTest.png`} 
+                   alt="Logic IC chip testing" />
+                </a>
+              </div>
+            </div>
+            <div key={3} className="rounded-md border border-indigo-200 bg-white p-3 shadow-sm">
+ 	      <div className="aspect-[16/10] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100">
+                <a href={`${import.meta.env.BASE_URL}images/FirmwareUpdate.png`} target="_blank" rel="noreferrer no opener">
+                  <img 
+                   src={`${import.meta.env.BASE_URL}images/FirmwareUpdate.png`} 
+                   alt="Updating programmer firmware" />
+                </a>
+              </div>
+            </div>
+            <div key={4} className="rounded-md border border-indigo-200 bg-white p-3 shadow-sm">
+ 	      <div className="aspect-[16/10] rounded border border-indigo-200 bg-gradient-to-br from-sky-100 to-indigo-100">
+                <a href={`${import.meta.env.BASE_URL}images/AboutVisualMinipro.png`} target="_blank" rel="noreferrer no opener">
+                  <img 
+                   src={`${import.meta.env.BASE_URL}images/AboutVisualMinipro.png`} 
+                   alt="About Visual Minipro" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -106,7 +106,9 @@ export default function App() {
           <div className="rounded-md border border-indigo-200 bg-gradient-to-br from-sky-50 to-indigo-50 p-4">
             <h4 className="font-medium">Privacy</h4>
             <p className="mt-2 text-[14px] text-[#334155]">We do not sell your data. Visual Minipro uses only the permissions required to communicate with your programmer. Logs and settings stay on your Mac.</p>
+          {/*
             <p className="mt-3 text-[13px] text-[#334155]">Add a full privacy policy at <code>/privacy</code> and link it in the footer.</p>
+          */}
           </div>
         </div>
       </section>

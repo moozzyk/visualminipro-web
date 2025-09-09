@@ -29,6 +29,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2"
+              onclick="fbq('track', 'AddToCart'); return true;"
             >
               <img 
                src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 
@@ -51,10 +52,11 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-center justify-center gap-2"
+                onclick="fbq('track', 'AddToCart'); return true;"
               >
                 <img 
                  src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 
-                 alt="Download on the Mac Map Store" />
+                 alt="Download on the Mac Map Store"/>
               </a>
               <a href="#features" className="inline-flex items-center justify-center rounded-md px-4 py-2 text-[15px] text-indigo-700 hover:text-indigo-800">
                 See features
@@ -191,7 +193,7 @@ export default function App() {
           <div className="flex items-center gap-4">
             <a href="https://github.com/moozzyk/MiniproUI/issues" target="_blank" rel="noreferrer noopener" className="hover:text-indigo-700">Support</a>
             <a href="#privacy" className="hover:text-indigo-700">Privacy</a>
-            <a href={APP_STORE_URL} className="text-indigo-700 hover:text-indigo-800">Mac App Store</a>
+            <a href={APP_STORE_URL} className="text-indigo-700 hover:text-indigo-800" target="_blank" rel="noreferrer noopener" onclick="fbq('track', 'AddToCart'); return true;">Mac App Store</a>
           </div>
         </div>
       </footer>

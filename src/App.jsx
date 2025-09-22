@@ -29,7 +29,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2"
-              onClick={() => { fbq('track', 'AddToCart'); return true; }}
+              onClick={() => { fbq('track', 'InitiateCheckout'); return true; }}
             >
               <img 
                src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 
@@ -52,7 +52,7 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-center justify-center gap-2"
-                onClick={() => { fbq('track', 'InitiateCheckout'); return true; }}
+                onClick={() => { fbq('track', 'AddToCart'); return true; }}
               >
                 <img 
                  src={`${import.meta.env.BASE_URL}images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg`} 

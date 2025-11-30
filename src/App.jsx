@@ -66,7 +66,8 @@ export default function App() {
               <li className="rounded-full border border-sky-200 bg-sky-50 text-sky-700 px-2 py-1">T866+</li>
               <li className="rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 px-2 py-1">T48</li>
               <li className="rounded-full border border-rose-200 bg-rose-50 text-rose-700 px-2 py-1">T56</li>
-              <li className="rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 px-2 py-1">Apple silicon</li>
+              <li className="rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 px-2 py-1">Apple Silicon & Intel</li>
+
             </ul>
           </div>
 
@@ -100,7 +101,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14 grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h3 className="text-xl font-semibold">Compatibility</h3>
-            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern Mac OS on Apple silicon Macs.</p>
+            <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern Mac OS on Apple Silicon and Intel Macs.</p>
             <ul className="mt-4 space-y-2 text-[15px]">
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> XGecu T866+, T48, T56</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> USB connection with status and troubleshooting tips</li>
@@ -169,7 +170,7 @@ export default function App() {
           <div className="mt-6 divide-y divide-indigo-100 border border-indigo-100 rounded-md bg-white">
             {[
               { q: "Which programmers are supported?", a: "XGecu T866+, T48, and T56." },
-              { q: "What Mac OS versions are supported?", a: "Recent Mac OS versions on Apple silicon Macs." },
+              { q: "What Mac OS versions are supported?", a: "Recent Mac OS versions (Sequoia or newer) on Apple Silicon or Intel Macs." },
               { q: "Can it test logic chips?", a: "Yes — common TTL/CMOS families with clear pass/fail." },
               { q: "Is firmware updating supported?", a: "Yes, from within the app." },
               { q: "Where can I get help?", a: (<>Report problems in the <a href="https://github.com/moozzyk/MiniproUI/issues" target="_blank" rel="noreferrer noopener" className="text-indigo-700 hover:underline">Visual Minipro Github repo</a>.</>) },

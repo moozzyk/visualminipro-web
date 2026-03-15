@@ -12,7 +12,7 @@ import { Cpu, HardDrive, Usb, ShieldCheck, MessageSquare, ExternalLink, CheckCir
 
 const APP_NAME = "Visual Minipro";
 const TAGLINE = "Easiest way to use your XGecu programmer on Mac — burn EEPROMs, test logic ICs, and update firmware.";
-const SUBHEAD = "A focused, Mac‑native UI for T866+/T48/T56 that just works.";
+const SUBHEAD = "A focused, Mac‑native UI for T866+/T48/T56/T76 that just works.";
 
 // TODO: paste your real Mac App Store URL here
 const APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXXX";
@@ -73,6 +73,7 @@ export default function App() {
               <li className="rounded-full border border-sky-200 bg-sky-50 text-sky-700 px-2 py-1">T866+</li>
               <li className="rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 px-2 py-1">T48</li>
               <li className="rounded-full border border-rose-200 bg-rose-50 text-rose-700 px-2 py-1">T56</li>
+              <li className="rounded-full border border-amber-300 bg-amber-50 text-amber-700 px-2 py-1">T76 <span className="rounded-full bg-amber-200 text-amber-800 text-[10px] font-semibold px-1">NEW!</span></li>
               <li className="rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 px-2 py-1">Apple silicon & Intel</li>
             </ul>
           </div>
@@ -103,7 +104,7 @@ export default function App() {
           <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Feature color="sky" icon={HardDrive} title="EEPROM programming" desc="Read, verify, and write EEPROMs with a clear, guided flow." />
             <Feature color="indigo" icon={Cpu} title="Logic IC tests" desc="Run tests for common TTL/CMOS chips with clear pass/fail feedback." />
-            <Feature color="emerald" icon={Usb} title="XGecu support" desc="Works with T866+, T48, and T56 via USB on macOS." />
+            <Feature color="emerald" icon={Usb} title="XGecu support" desc="Works with T866+, T48, T56, and T76 via USB on macOS." />
             <Feature color="violet" icon={ShieldCheck} title="macOS‑native" desc="Signed, sandbox‑friendly design that plays well with system permissions." />
             <Feature color="rose" icon={CheckCircle2} title="Transparent operations" desc="Deterministic progress, readable logs, and actionable errors." />
             <Feature color="amber" icon={MessageSquare} title="Simple by design" desc="Minimal UI that makes frequent tasks fast, not fancy." />
@@ -118,7 +119,7 @@ export default function App() {
             <h3 className="text-xl font-semibold">Compatibility</h3>
             <p className="mt-2 text-[15px] text-[#334155]">Optimized for modern macOS on Apple silicon and Intel Macs.</p>
             <ul className="mt-4 space-y-2 text-[15px]">
-              <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> XGecu T866+, T48, T56</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> XGecu T866+, T48, T56, T76</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> USB connection with status and troubleshooting tips</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="mt-1 h-4 w-4 text-indigo-600"/> Firmware update flow built‑in</li>
             </ul>
@@ -152,7 +153,7 @@ export default function App() {
           <h3 className="text-xl font-semibold">FAQ</h3>
           <div className="mt-6 divide-y divide-indigo-100 border border-indigo-100 rounded-md bg-white">
             {[
-              { q: "Which programmers are supported?", a: "XGecu T866+, T48, and T56." },
+              { q: "Which programmers are supported?", a: "XGecu T866+, T48, T56, and T76." },
               { q: "What macOS versions are supported?", a: "Recent macOS on Apple silicon and Intel Macs." },
               { q: "Can it test logic chips?", a: "Yes — common TTL/CMOS families with clear pass/fail." },
               { q: "Is firmware updating supported?", a: "Yes, from within the app." },
